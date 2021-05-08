@@ -1,10 +1,21 @@
 package sort;
 
+
 public class sort extends Thread {
-	static final int N = 2;
-	static int[] arr = new int[]{7,12,19,3,18,4,2,6,15,8};
+	
+	static int[] arr = new int[50];
 	static int[] mergeArray = new int[arr.length/2];
 	static int[] quickArray = new int[arr.length/2];
+	
+	/**
+	 * 
+	 * @param a
+	 */
+	static void genRandomArray(int[] a) {
+		for(int i=0; i<a.length; i++) {
+			a[i] = (int) (Math.random() * 50);
+		}
+	}
 	
 	/**
 	 * 
@@ -66,6 +77,7 @@ public class sort extends Thread {
 	 */
 	public static void main(String args[]) {
 		
+		genRandomArray(arr);
 		System.out.println("Unsorted array: ");
 		for(int i=0; i<arr.length; i++) {
 			System.out.print(arr[i] + ",");
