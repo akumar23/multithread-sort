@@ -7,9 +7,9 @@ import java.util.concurrent.ForkJoinPool;
 
 public class MergeSort {
 
-	  static int[] arr;
+	  	static int[] arr;
 	  
-	  /**
+	  	/**
 		 * generates a random array by passing in random integers to each index of the array
 		 * @param a - passed in array
 		 */
